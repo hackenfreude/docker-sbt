@@ -1,6 +1,6 @@
 ARG OPENJDK_TAG=8u162-jdk
 
-FROM openjdk:${OPENJDK_TAG} as intellij
+FROM openjdk:${OPENJDK_TAG}
 
 ENV DEBIAN_FRONTEND=noninteractive
 
