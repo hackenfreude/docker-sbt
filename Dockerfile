@@ -1,4 +1,4 @@
-ARG OPENJDK_TAG=8u141-jdk
+ARG OPENJDK_TAG=8u162-jdk
 
 FROM openjdk:${OPENJDK_TAG} as intellij
 
