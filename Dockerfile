@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 ARG SBT_VERSION=1.0.2
 
-RUN apt-get --assume-yes update && apt-get --assume-yes install apt-transport-https ca-certificates
+RUN apt-get --assume-yes update && DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install apt-transport-https ca-certificates
 
 RUN echo "deb https://dl.bintray.com/sbt/debian /" > /etc/apt/sources.list.d/sbt.list
 
