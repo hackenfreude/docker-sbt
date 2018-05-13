@@ -2,7 +2,7 @@ ARG OPENJDK_TAG=8u171-jdk
 
 FROM openjdk:${OPENJDK_TAG}
 
-ARG SBT_VERSION=1.1.1
+ARG SBT_VERSION=1.1.5
 
 RUN apt-get --quiet update && DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install apt-transport-https ca-certificates
 
