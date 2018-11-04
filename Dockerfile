@@ -2,7 +2,7 @@ ARG OPENJDK_TAG=8u181-jdk-stretch
 
 FROM openjdk:${OPENJDK_TAG}
 
-ARG SBT_VERSION=1.1.5
+ARG SBT_VERSION=1.2.6
 
 RUN apt-get --quiet update && DEBIAN_FRONTEND=noninteractive apt-get --assume-yes install apt-transport-https ca-certificates
 
